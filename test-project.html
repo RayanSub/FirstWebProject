@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rayan Alsubaie</title>
+        <link rel="styleSheet" href="test-project-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Blinker|Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css">
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-5x fa-arrow-circle-up"></i></button>
+        <div id="header">
+            <div id="pageName">	&lt;/ RayanSub 	&gt;</div>
+            <div id="nav">
+                <ul id="navList">
+                    <li id="navItems"><a href="#d" class="a-link">About me</a></li>
+                    <li id="navItems"><a href="#dd" class="a-link">Personal Information</a></li>
+                    <li id="navItems"><a href="#social" class="a-link">Links</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="intro">
+                <p id="welcome"> <span id="text2">Welcome to my page!</span><br><br> this page is a test page that i am making to practice my HTML and CSS skills and improve my knowledge.</p>
+            </div>
+
+            <div id="d"></div>
+            <div id="about">
+                <hr class="hr-text" data-content="About me">
+                <p id="p1">this is a sample text this is a sample text this is a sample text this is a sample text this is a sample text
+                        this is a sample text this is a sample text  this is a sample text this is a sample text this is a sample text
+                        this is a sample text this is a sample text  this is a sample text this is a sample text this is a sample text
+                        this is a sample text this is a sample text  this is a sample text this is a sample text this is a sample text
+                        this is a sample text this is a sample text  this is a sample text this is a sample text this is a sample text
+                        this is a sample text this is a sample text  this is a sample text this is a sample text this is a sample text
+                </p> 
+            </div>
+
+            <div id="dd"></div>
+            <div id="about2">
+                <hr class="hr-text" data-content="Personal Information">
+            </div>
+
+            <div id="info">
+                
+                <div id="row">
+                    <div id="icon"><i class="fa fa-7x fa-user"></i></div>
+                    <div id="desc">
+                        <h1>Who Am I?</h1>
+                        <p>my name is rayan alsubaie and i am 21 years old.</p></div>
+                </div>
+                <div id="line"></div>
+                <div id="row">
+                    <div id="icon"><i class="fa fa-7x fa-book-open"></i></div>
+                    <div id="desc">
+                        <h1>Where do i study?</h1>
+                        <p>i am a student in king saud university in computer and information sciences.</p></div>
+                </div>
+                <div id="line"></div>
+                <div id="row">
+                    <div id="icon"><i class="fa fa-7x fa-code"></i></div>
+                    <div id="desc">
+                        <h1>My coding knowledge</h1>
+                        <p>i study java in my collage and study web development at my free time.</p></div>
+                </div>
+
+            </div>
+
+            <div id="links">
+                <h1 id="follow">You Can Also Follow Me On These Social Media Websites</h1>
+                <div id="social">
+                    <a href="" class="social2"><i class="fab fa-7x fa-twitter"></i></a>
+                    <a href="" class="social2"><i class="fab fa-7x fa-facebook-square"></i></a>
+                    <a href="" class="social2"><i class="fab fa-7x fa-instagram"></i></a>
+                    <a href="" class="social2"><i class="fab fa-7x fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $('#intro').mousemove(function(e){
+            var moveX = (e.pageX * -1 / 5);
+            var moveY = (e.pageY * -1 / 5);
+            $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+        })
+        </script>
+        <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+                    document.getElementById("myBtn").style.display = "block";
+                  } else {
+                    document.getElementById("myBtn").style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+    </body>
+</html>
